@@ -38,4 +38,8 @@ out/
 .vscode/
 
 ### nodejs ###
-!**/app/node_modules
+**/app/.build
+**/app/build
+**/app/web_modules
+**/app/node_modules
+
