@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:5000")
 @RestController
 @RequestMapping("/api")
 class GroupController {
@@ -30,6 +31,7 @@ class GroupController {
         return groupRepository.findAll();
     }
 
+    @CrossOrigin(origins = "http://localhost:5000")
     @GetMapping("/group/{id}")
     ResponseEntity<?> getGroup(@PathVariable Long id) {
         Optional<Group> group = groupRepository.findById(id);
