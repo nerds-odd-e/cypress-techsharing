@@ -1,10 +1,10 @@
 <script>
-    import { onMount } from 'svelte';
-    import { Router, Link, Route } from 'svelte-routing';
+    import { Link } from 'svelte-routing';
     import { Button,  ButtonGroup, Container, Table } from 'sveltestrap';
     import GroupAPI from './GroupAPI.svelte';
     import AppNavBar from './AppNavBar.svelte';
     import { deleteGroup } from './groupsStore.js';
+
     export let location;
 
     const formatDate = date => {
@@ -20,7 +20,7 @@
     <AppNavBar />
     <Container fluid>
         <div class="float-right">
-            <Button color="success" tag={Link} to="http://localhost:8080/api/groups/new">Add Group</Button>
+            <Button color="success" tag={Link} to="/api/groups/new">Add Group</Button>
         </div>
         <h3>Tech Community Events</h3>
         <Table class="mt-4">

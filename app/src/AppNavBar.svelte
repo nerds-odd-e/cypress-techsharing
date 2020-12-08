@@ -1,6 +1,5 @@
 <script>
- import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from "sveltestrap";
- import { Router, Route, Link } from "svelte-routing";
+    import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from "sveltestrap";
 </script>
 
 <Navbar color="dark" dark expand="md">
@@ -15,6 +14,3 @@
         </NavItem>
     </Nav>
 </Navbar>
-
-<style>
-</style>

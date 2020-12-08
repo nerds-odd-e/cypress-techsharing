@@ -7,7 +7,7 @@ module.exports = {
   },
   plugins: [
     /* ... */
-    '@snowpack/plugin-svelte'
+    '@snowpack/plugin-svelte',
   ],
   install: [
     /* ... */
@@ -17,13 +17,14 @@ module.exports = {
   },
   devOptions: {
     /* ... */
-    port: 5000
+    port: 5000,
   },
   buildOptions: {
     /* ... */
   },
   proxy: {
     /* ... */
+    '/api': 'http://localhost:8080/api',
   },
   alias: {
     /* ... */
