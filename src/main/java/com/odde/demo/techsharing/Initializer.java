@@ -28,7 +28,7 @@ class Initializer implements CommandLineRunner {
     Group techshare = repository.findByName("Shenzhen Tech Community");
     Event e = Event.builder()
                   .title("Full Stack Reactive")
-                  .description("Reactive with Spring Boot + React")
+                  .description("Reactive with Spring Boot + Svelte")
                   .date(Instant.parse("2020-12-12T15:00:00.000Z"))
                   .build();
     techshare.setEvents(Collections.singleton(e));

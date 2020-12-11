@@ -2,9 +2,12 @@
     import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from "sveltestrap";
 </script>
 
-<Navbar color="dark" dark expand="md">
+<Navbar color="info" light expand="md">
     <NavbarBrand href=".">Home</NavbarBrand>
     <Nav class="ml-auto" navbar>
+        <NavItem>
+            <NavLink href="https://cypress.io">@cypress.io</NavLink>
+        </NavItem>
         <NavItem>
             <NavLink
                 href="https://www.odd-e.com">@odd-e.com</NavLink>

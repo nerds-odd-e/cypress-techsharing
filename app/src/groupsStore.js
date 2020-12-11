@@ -21,7 +21,3 @@ export function deleteGroup(id) {
     return [...$groups].filter((grp) => grp.id !== id);
   });
 };
-
-export function addGroup(group) {
-  
-}

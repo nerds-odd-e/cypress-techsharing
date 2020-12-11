@@ -9,6 +9,6 @@
 <div>
     <AppNavBar />
     <Container fluid>
-        <Button color="light" outline><Link to="/groups">Manage Tech Communities</Link></Button>
+        <Button color="light" block><Link to="/groups">Manage Tech Communities</Link></Button>
     </Container>
 </div>
