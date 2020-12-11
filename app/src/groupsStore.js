@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { fetchGroups, removeGroup } from "./groupsApi.js";
 
-const { set, update, subscribe } = writable(null);
+const { set, update, subscribe } = writable([]);
 
 fetchGroups().then(
   (groups) => set(groups),
@@ -9,15 +9,15 @@ fetchGroups().then(
 );
 
 export default {
-  subscribe
+  subscribe,
 };
 
 export function deleteGroup(id) {
-  removeGroup(id).then(res => res.json);
-  update($groups => {
+  removeGroup(id).then((res) => res.json);
+  update(($groups) => {
     if ($groups === null || $groups.error) {
       return $groups;
     }
     return [...$groups].filter((grp) => grp.id !== id);
   });
-};
+}

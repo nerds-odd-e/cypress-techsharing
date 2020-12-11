@@ -9,11 +9,12 @@
             <NavLink href="https://cypress.io">@cypress.io</NavLink>
         </NavItem>
         <NavItem>
-            <NavLink
-                href="https://www.odd-e.com">@odd-e.com</NavLink>
+            <NavLink href="https://www.odd-e.com">@odd-e.com</NavLink>
         </NavItem>
         <NavItem>
-            <NavLink href="https://github.com/nerds-odd-e/cypress-techsharing">Github</NavLink>
+            <NavLink href="https://github.com/nerds-odd-e/cypress-techsharing">
+                @github
+            </NavLink>
         </NavItem>
     </Nav>
 </Navbar>
