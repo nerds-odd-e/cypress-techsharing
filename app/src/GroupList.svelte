@@ -1,10 +1,11 @@
 <script>
-    import { Link } from "svelte-routing";
     import { Button, Container, Row, Col } from "sveltestrap";
+    import { Link } from "svelte-routing";
     import GroupTable from "./GroupTable.svelte";
     import AppNavBar from "./AppNavBar.svelte";
 
     export let location;
+    let id = "";
 </script>
 
 <div>
@@ -18,8 +19,8 @@
                 <h3>Tech Community Events</h3>
             </Col>
             <Col sm="4" class="d-flex justify-content-end align-items-center">
-                <Button color="success" tag={Link} to="/api/groups/new">
-                    Add Group
+                <Button color="success">
+                    <Link to="/groups/new">Add Group</Link>
                 </Button>
             </Col>
         </Row>

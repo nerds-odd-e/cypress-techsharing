@@ -1,5 +1,6 @@
 <script>
     import { Button, ButtonGroup, Table } from "sveltestrap";
+    import { Link } from "svelte-routing";
     import GroupAPI from "./GroupAPI.svelte";
     import { deleteGroup } from "./groupsStore.js";
 
@@ -39,7 +40,9 @@
                         </td>
                         <td>
                             <ButtonGroup>
-                                <Button size="sm" color="primary">Edit</Button>
+                                <Button size="sm" color="primary">
+                                    <Link to={'/groups/' + id}>Edit</Link>
+                                </Button>
                                 <Button
                                     size="sm"
                                     color="danger"

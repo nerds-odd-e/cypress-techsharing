@@ -3,16 +3,16 @@
 
 
 "@babel/code-frame@^7.0.0":
-  version "7.10.4"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
-  integrity sha512-vG6SvB6oYEhvgisZNFRmRCUkLz11c7rp+tbNTynGqc6mS1d5ATd/sGyV6W0KZZnXRKMTzZDRgQT3Ou9jhpAfUg==
+  version "7.12.11"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
+  integrity sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==
   dependencies:
     "@babel/highlight" "^7.10.4"
 
 "@babel/helper-validator-identifier@^7.10.4":
-  version "7.10.4"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.4.tgz#a78c7a7251e01f616512d31b10adcf52ada5e0d2"
-  integrity sha512-3U9y+43hz7ZM+rzG24Qe2mufW5KhvFg/NhnNph+i9mgCtdTCtMJuI1TMkrIUiK7Ix4PYlRF9I5dhqaLYA/ADXw==
+  version "7.12.11"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.12.11.tgz#c9a1f021917dcb5ccf0d4e453e399022981fc9ed"
+  integrity sha512-np/lG3uARFybkoHokJUmf1QfEvRVCPbmQeUQpKow5cQ3xWrV9i3rUHodKDJPQfTVX61qKi+UdYk8kik84n7XOw==
 
 "@babel/highlight@^7.10.4":
   version "7.10.4"
@@ -117,9 +117,9 @@
     npm-run-path "^4.0.1"
 
 "@snowpack/plugin-svelte@^3.3.0":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.3.1.tgz#67ed102191b3c7a8c1efc74f5189ca848ef093d8"
-  integrity sha512-2RqwAODn+VxcjEF8/rtUnQgHZPM5hpj1TpCnQSJNFi4bu4EqBhrKMEVsXXno7omDLCXa/zTo1+6QgnE15KMoKA==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.4.0.tgz#ca1a1941b8a1810612a863815196c26d51faeb4c"
+  integrity sha512-ghsZHt99y5XDRLrvUmgB4FclblZ4TPqDEAklbwg8/UswvHZTFqnvPTtmkGLTybuSk+BoxdJYFMEeqWVXQTIHIw==
   dependencies:
     rollup-plugin-svelte "^7.0.0"
     svelte-hmr "^0.12.0"
@@ -142,10 +142,10 @@
     "@types/node" "*"
     "@types/responselike" "*"
 
-"@types/cheerio@^0.22.22":
-  version "0.22.23"
-  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.23.tgz#74bcfee9c5ee53f619711dca953a89fe5cfa4eb4"
-  integrity sha512-QfHLujVMlGqcS/ePSf3Oe5hK3H8wi/yN2JYuxSB1U10VvW1fO3K8C+mURQesFYS1Hn7lspOsTT75SKq/XtydQg==
+"@types/cheerio@0.22.22":
+  version "0.22.22"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.22.tgz#ae71cf4ca59b8bbaf34c99af7a5d6c8894988f5f"
+  integrity sha512-05DYX4zU96IBfZFY+t3Mh88nlwSMtmmzSYaQkKN48T495VV1dkHSah6qYyDTN5ngaS0i0VonH37m+RuzSM0YiA==
   dependencies:
     "@types/node" "*"
 
@@ -172,9 +172,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "14.14.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.12.tgz#0b1d86f8c40141091285dea02e4940df73bba43f"
-  integrity sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
+  version "14.14.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.14.tgz#f7fd5f3cc8521301119f63910f0fb965c7d761ae"
+  integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -589,19 +589,19 @@ es-module-lexer@^0.3.24:
   integrity sha512-Va0Q/xqtrss45hWzP8CZJwzGSZJjDM5/MJRE3IXXnUCcVLElR9BRaE9F62BopysASyc4nM3uwhSW7FFB9nlWAA==
 
 esbuild@^0.8.7:
-  version "0.8.21"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.21.tgz#c431f8af457795c2fecb1b2873cb8eaef4e5b53c"
-  integrity sha512-vRRx5MZmiekw2R7jK5BppvBUFCJA0Zkl0wYxrDmyUvMPBcQC/xJvxJUM4R+Hgjgb3gp5P1W655AsuoqDeQQDVw==
+  version "0.8.23"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.23.tgz#8c4ccd3abb5f7b4ae9f31c571971517be4ae60d2"
+  integrity sha512-LkgCmotGnhVgRGxjDkTBBYrnJ5stcxK+40cEJGtXUS16hcAWy90cn1qjxKCogzLPJ75gW/L6ejly7VKrMstVGQ==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-esinstall@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.4.0.tgz#b228ed75919b0b87ca0c28ab28f6888d59b92788"
-  integrity sha512-aOGbM1/AYSPMBspYmmNcqlhmUEpVh0wEXj6+IKP8W+rdyyXPYzYOEtjilH8XDc9P7UFTeB8VIfdtJiLGQkpDVA==
+esinstall@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.5.1.tgz#209e83be9186be8d917fd71278ce33d2839f4cb0"
+  integrity sha512-VMg7lZ+QPL/YIwFfyELYR8rNUTpU2TqM5BeLbLmmaTDol1cnuo/UAxN8H3OalaBjTl9oGllXcDq6bLeWSUJa9A==
   dependencies:
     "@rollup/plugin-alias" "^3.0.1"
     "@rollup/plugin-commonjs" "^16.0.0"
@@ -693,9 +693,9 @@ find-up@^5.0.0:
     path-exists "^4.0.0"
 
 follow-redirects@^1.0.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
-  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
+  integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
 fs-minipass@^2.0.0:
   version "2.1.0"
@@ -1549,9 +1549,9 @@ rollup-pluginutils@^2.8.1, rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.23.0, rollup@^2.34.0:
-  version "2.34.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.34.2.tgz#fa73e05c64df587e9ed4dc80d7d4e7d4a43f8908"
-  integrity sha512-mvtQLqu3cNeoctS+kZ09iOPxrc1P1/Bt1z15enuQ5feyKOdM3MJAVFjjsygurDpSWn530xB4AlA83TWIzRstXA==
+  version "2.35.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.35.1.tgz#e6bc8d10893556a638066f89e8c97f422d03968c"
+  integrity sha512-q5KxEyWpprAIcainhVy6HfRttD9kutQpHbeqDTWnqAFNJotiojetK6uqmcydNMymBEtC4I8bCYR+J3mTMqeaUA==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -1582,13 +1582,14 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-skypack@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/skypack/-/skypack-0.1.2.tgz#1cf97efea2c506192e68a85ca7d265fdb8dc4fe1"
-  integrity sha512-zMQ2B1e34DI4EmOmSezdbSBuaW/DD9piwbOLUDF/rgSokNnvRLtCHG8d+xB5fiVIJLAW9PDCbJwtAII+awucqQ==
+skypack@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/skypack/-/skypack-0.2.1.tgz#700380a639ba13e5dc5a861932430ee5606e8d71"
+  integrity sha512-+LE2zg5Hdcxnq2PYfo6k/jqLA7vlCljZuGo6x9x9+83GvGULvdBGLCLIa5wUhcHQUIts4m9hB+f3asTPL/TcsA==
   dependencies:
     cacache "^15.0.0"
     cachedir "^2.3.0"
+    esinstall "^0.5.1"
     etag "^1.8.1"
     find-up "^5.0.0"
     got "^11.1.4"
@@ -1605,13 +1606,13 @@ slash@^3.0.0:
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 snowpack@^2.17.1:
-  version "2.18.2"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.18.2.tgz#535310ad9692d2b8321e6b99b484f2e8f9730527"
-  integrity sha512-/80GmEqFBU9Xzo8dUaBGKnwgfewXU6ZzcQt4TUOhJixJCE+s6Mpglv6QfxFwybYOaMnUklSQIhUuH2jfKQUccA==
+  version "2.18.4"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.18.4.tgz#819ac2bf05623f85155f82e2e49f8d5f8abde664"
+  integrity sha512-tZpcK3UBtYVF9ED1h9h9qkSYSC2IzVXjOHN+Iqo3tnDMCHvv/fgTMQT3+nJwPerBYvUemaCTS8pjRQDYfbWfQA==
   dependencies:
     "@snowpack/plugin-build-script" "^2.0.12"
     "@snowpack/plugin-run-script" "^2.2.1"
-    "@types/cheerio" "^0.22.22"
+    "@types/cheerio" "0.22.22"
     cacache "^15.0.0"
     cachedir "^2.3.0"
     cheerio "^1.0.0-rc.3"
@@ -1622,7 +1623,7 @@ snowpack@^2.17.1:
     detect-port "^1.3.0"
     es-module-lexer "^0.3.24"
     esbuild "^0.8.7"
-    esinstall "^0.4.0"
+    esinstall "^0.5.1"
     etag "^1.8.1"
     execa "^4.0.3"
     find-cache-dir "^3.3.1"
@@ -1644,7 +1645,7 @@ snowpack@^2.17.1:
     resolve-from "^5.0.0"
     rimraf "^3.0.0"
     signal-exit "^3.0.3"
-    skypack "^0.1.2"
+    skypack "^0.2.1"
     source-map "^0.7.3"
     strip-ansi "^6.0.0"
     strip-comments "^2.0.1"

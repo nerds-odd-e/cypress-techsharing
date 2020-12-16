@@ -24,7 +24,15 @@ const removeGroup = async (id) => {
 };
 
 const fetchGroup = async (id) => {
-  return await (await fetch(`/api/group/${id}`)).json();
+  let group;
+  await fetch(`/api/group/${id}`)
+    .then((r) => r.json())
+    .then((data) => (group = data))
+    .catch((error) => {
+      group = {};
+      alert(`REST API call error: ${error}`);
+    });
+  return group;
 };
 
 const updateGroup = async (id, group) => {
