@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
+import {
+  Alert,
+  Button,
+  Container,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+} from "reactstrap";
 import AppNavBar from "./AppNavBar";
 
 function GroupEdit(props) {
@@ -14,6 +22,7 @@ function GroupEdit(props) {
   };
 
   const [item, setItem] = useState(emptyItem);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const getGroup = useCallback(async (id) => {
     const group = await fetch(`/api/group/${id}`)
@@ -22,7 +31,8 @@ function GroupEdit(props) {
         return data;
       })
       .catch((err) => {
-        console.log(err);
+        const errMessage = `Failed to retrieve group record for id: ${id} - ${err.message}`;
+        setErrorMessage(errMessage);
       });
     setItem(group);
   }, []);
@@ -52,7 +62,10 @@ function GroupEdit(props) {
       },
       body: JSON.stringify(item),
     }).catch((err) => {
-      console.log(err);
+      const errMessage = `Failed to ${item.id ? "create" : "update"} record: ${
+        err.message
+      }`;
+      setErrorMessage(errMessage);
     });
     props.history.push("/groups");
   };
@@ -64,6 +77,7 @@ function GroupEdit(props) {
       <AppNavBar />
       <Container>
         {title}
+        {errorMessage ? <Alert color="warning">{errorMessage}</Alert> : null}
         <Form onSubmit={handleSubmit}>
           <FormGroup>
             <Label for="name">Name</Label>
