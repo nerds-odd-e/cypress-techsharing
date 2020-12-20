@@ -117,12 +117,12 @@
     npm-run-path "^4.0.1"
 
 "@snowpack/plugin-svelte@^3.3.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.4.0.tgz#ca1a1941b8a1810612a863815196c26d51faeb4c"
-  integrity sha512-ghsZHt99y5XDRLrvUmgB4FclblZ4TPqDEAklbwg8/UswvHZTFqnvPTtmkGLTybuSk+BoxdJYFMEeqWVXQTIHIw==
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.4.1.tgz#27723d4fd6b6df3eb62a517925d1c919455b76ce"
+  integrity sha512-wT25m5wmDz9mdnAA0lxgj0ixJc09UL1vSCpS8dADEDM5GU28+mqGa/64XsSulQyeziljJGo/p9pm+yj6xcdQiw==
   dependencies:
     rollup-plugin-svelte "^7.0.0"
-    svelte-hmr "^0.12.0"
+    svelte-hmr "^0.12.1"
     svelte-preprocess "^4.6.0"
 
 "@szmarczak/http-timer@^4.0.5":
@@ -239,6 +239,14 @@ anymatch@~3.1.1:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
+
+assert@^1.4.1:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/assert/-/assert-1.5.0.tgz#55c109aaf6e0aefdb3dc4b71240c70bf574b18eb"
+  integrity sha512-EDsgawzwoun2CZkCgtxJbv392v4nbk9XDD06zI+kQYoBM/3RBWLlEyJARDOmhAAosBjWACEkKL6S+lIZtcAubA==
+  dependencies:
+    object-assign "^4.1.1"
+    util "0.10.3"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -589,9 +597,9 @@ es-module-lexer@^0.3.24:
   integrity sha512-Va0Q/xqtrss45hWzP8CZJwzGSZJjDM5/MJRE3IXXnUCcVLElR9BRaE9F62BopysASyc4nM3uwhSW7FFB9nlWAA==
 
 esbuild@^0.8.7:
-  version "0.8.23"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.23.tgz#8c4ccd3abb5f7b4ae9f31c571971517be4ae60d2"
-  integrity sha512-LkgCmotGnhVgRGxjDkTBBYrnJ5stcxK+40cEJGtXUS16hcAWy90cn1qjxKCogzLPJ75gW/L6ejly7VKrMstVGQ==
+  version "0.8.24"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.24.tgz#18645e102254682909017cec648f84d4834f15b3"
+  integrity sha512-bqgEa2VemAN+YM52SM1626+/pdLp+p9NyqISB06ixcvauKIJk6akia3UTTsGAgn0oHEdReZ97gL+LYX+UjgwKA==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -599,9 +607,9 @@ escape-string-regexp@^1.0.5:
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 esinstall@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.5.1.tgz#209e83be9186be8d917fd71278ce33d2839f4cb0"
-  integrity sha512-VMg7lZ+QPL/YIwFfyELYR8rNUTpU2TqM5BeLbLmmaTDol1cnuo/UAxN8H3OalaBjTl9oGllXcDq6bLeWSUJa9A==
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-0.5.2.tgz#933650258e279a8689316e21db67459d972f3434"
+  integrity sha512-6vvYBxFXhmRSWl8xs8thEhysuSkhFhtHEYg5QN8nuHffAu4Vwg9DwfgNxGJnFjzxLRcPUpA/3/DKHZovJkidOQ==
   dependencies:
     "@rollup/plugin-alias" "^3.0.1"
     "@rollup/plugin-commonjs" "^16.0.0"
@@ -612,6 +620,7 @@ esinstall@^0.5.1:
     cjs-module-lexer "^1.0.0"
     es-module-lexer "^0.3.24"
     is-builtin-module "^3.0.0"
+    is-valid-identifier "^2.0.2"
     kleur "^4.1.1"
     mkdirp "^1.0.3"
     rimraf "^3.0.0"
@@ -878,6 +887,11 @@ inherits@2, inherits@^2.0.1, inherits@^2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+inherits@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
+  integrity sha1-sX0I0ya0Qj5Wjv9xn5GwscvfafE=
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -947,6 +961,13 @@ is-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-2.0.0.tgz#bde9c32680d6fae04129d6ac9d921ce7815f78e3"
   integrity sha512-XCoy+WlUr7d1+Z8GgSuXmpuUFC9fOhRXglJMx+dwLKTkL44Cjd4W1Z5P+BQZpr+cR93aGP4S/s7Ftw6Nd/kiEw==
+
+is-valid-identifier@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/is-valid-identifier/-/is-valid-identifier-2.0.2.tgz#146d9dbf29821b8118580b039d2203aa4bd1da4b"
+  integrity sha512-mpS5EGqXOwzXtKAg6I44jIAqeBfntFLxpAth1rrKbxtKyI6LPktyDYpHBI+tHlduhhX/SF26mFXmxQu995QVqg==
+  dependencies:
+    assert "^1.4.1"
 
 is-wsl@^2.1.1:
   version "2.2.0"
@@ -1206,6 +1227,11 @@ nth-check@~1.0.1:
   integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
   dependencies:
     boolbase "~1.0.0"
+
+object-assign@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
@@ -1606,9 +1632,9 @@ slash@^3.0.0:
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 snowpack@^2.17.1:
-  version "2.18.4"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.18.4.tgz#819ac2bf05623f85155f82e2e49f8d5f8abde664"
-  integrity sha512-tZpcK3UBtYVF9ED1h9h9qkSYSC2IzVXjOHN+Iqo3tnDMCHvv/fgTMQT3+nJwPerBYvUemaCTS8pjRQDYfbWfQA==
+  version "2.18.5"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.18.5.tgz#10a0130fb1eeecda6dfd3be1b1b60ff9849e3da4"
+  integrity sha512-UThUbGXn/wN7zRJDVpbC0F3uvkhu6PAgpTbV1hdAaqLvYBewT794iEMAY5mMxT27zQ+ZOyqbICaBtKtq0BgDcA==
   dependencies:
     "@snowpack/plugin-build-script" "^2.0.12"
     "@snowpack/plugin-run-script" "^2.2.1"
@@ -1725,10 +1751,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte-hmr@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.0.tgz#de3616d09a902fb7b0a014f1b3acdded1da352f6"
-  integrity sha512-NYpzqME/jlTBL+JLilznH2QnQbREJvwikWjLNpJuekhcCqIWbnO7hrNnMZCgAKiQHAKEdiohtjARJhO7nMZGbg==
+svelte-hmr@^0.12.1:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.2.tgz#689df7681f0461e7a2539b3fad1336ee1da84751"
+  integrity sha512-86fpj4Wjno7OREJsGxQwpVBtB3kmiKWwpOlvdZmfBZYankpL38lcVtAi1zvQXXcN4g8pRXUG68khwp6dYRwpYg==
 
 svelte-preprocess@^4.6.0:
   version "4.6.1"
@@ -1800,6 +1826,13 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+util@0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.10.3.tgz#7afb1afe50805246489e3db7fe0ed379336ac0f9"
+  integrity sha1-evsa/lCAUkZInj23/g7TeTNqwPk=
+  dependencies:
+    inherits "2.0.1"
 
 validate-npm-package-name@^3.0.0:
   version "3.0.0"
