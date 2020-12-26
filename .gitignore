@@ -38,3 +38,6 @@ out/
 
 ### asdf ###
 .tool-versions
+
+### nodejs/cypress ###
+node_modules/

@@ -22,3 +22,10 @@
 
 ### Start frontend webapp
 `cd app && yarn start` [http://localhost:3000](http://localhost:3000)
+
+### Cypress.io
+- Ensure nodejs 15.5.0 and yarn 1.22.10 is installed and available to path of root of project
+- Install cypress to root of project: `yarn add -D cypress`
+- Start basic default cypress: `yarn cy:open`
+- Install "Firefox Developer Edition" for your OS
+- Run cypress with just installed firefox:dev browser: `yarn cy:run --browser firefox:dev`
