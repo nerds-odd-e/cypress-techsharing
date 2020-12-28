@@ -139,7 +139,7 @@ function GroupEdit(props) {
               />
             </FormGroup>
             <FormGroup className="col-md-3 mb-3">
-              <Label for="country">Postal Code</Label>
+              <Label for="postalCode">Postal Code</Label>
               <Input
                 type="text"
                 name="postalCode"
