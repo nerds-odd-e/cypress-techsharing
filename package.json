@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --browser firefox:dev --headless",
     "start:backend": "gradle bootRun",
     "start:frontend": "cd app && yarn start",
-    "test": "run-p -clnr start:backend start:frontend cy:open"
+    "test:dev": "run-p -clnr start:backend start:frontend cy:open",
+    "test:ci": "run-p -clnr start:backend start:frontend cy:run"
   },
   "author": "Yeong Sheng, Tan",
   "license": "ISC",

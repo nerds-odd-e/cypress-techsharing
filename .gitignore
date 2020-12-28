@@ -41,3 +41,5 @@ out/
 
 ### nodejs/cypress ###
 node_modules/
+cypress/videos
+cypress/screenshots
