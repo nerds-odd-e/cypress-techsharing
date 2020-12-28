@@ -8,7 +8,7 @@
     "cy:run": "cypress run",
     "start:backend": "gradle bootRun",
     "start:frontend": "cd app && yarn start",
-    "test": "run-p -clnr start:backend start:frontend cy:open"
+    "test": "run-p -nr start:backend start:frontend cy:open"
   },
   "author": "Yeong Sheng, Tan",
   "license": "ISC",
