@@ -46,3 +46,6 @@ out/
 
 ### asdf ###
 .tool-versions
+
+### nodejs ###
+node_modules/
