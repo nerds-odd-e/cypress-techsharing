@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### asdf ###
+.tool-versions
+
+### nodejs ###
+node_modules/
