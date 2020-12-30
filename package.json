@@ -4,8 +4,8 @@
   "description": "Cypress Test Automation Tech Sharing",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run --browser firefox:dev --headless",
+    "cy:open": "percy exec -t 60 -- cypress open",
+    "cy:run": "percy exec -t 60 -- cypress run --browser firefox:dev --headless",
     "start:backend": "gradle bootRun",
     "start:frontend": "cd app && yarn start",
     "test:dev": "run-p -clnr start:backend start:frontend cy:open",
@@ -14,6 +14,7 @@
   "author": "Yeong Sheng, Tan",
   "license": "ISC",
   "devDependencies": {
+    "@percy/cypress": "^2.3.3",
     "@testing-library/cypress": "^7.0.3",
     "cypress": "^6.2.0",
     "npm-run-all": "^4.1.5"

@@ -20,6 +20,13 @@ export default function AppNavbar() {
   return (
     <Navbar color="dark" dark expand="md">
       <NavbarBrand tag={Link} to="/">
+        {/* <img */}
+        {/*   alt="" */}
+        {/*   src="/logo192.png" */}
+        {/*   width="30" */}
+        {/*   height="30" */}
+        {/*   className="d-inline-block align-top" */}
+        {/* />{" "} */}
         Home
       </NavbarBrand>
       <NavbarToggler onClick={() => toggle()} />
