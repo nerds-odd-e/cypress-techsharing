@@ -1,24 +1,39 @@
-# New Snowpack Svelte Project
+# create-svelte
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Available Scripts
+## Creating a project
 
-### yarn start
+If you're seeing this, you've probably already done this step. Congrats!
 
-Runs the app in the development mode.
-Open http://localhost:5000 to view it in the browser.
+```bash
+# create a new project in the current directory
+npm init svelte@next
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+# create a new project in my-app
+npm init svelte@next my-app
+```
 
-### yarn build
+> Note: the `@next` is temporary
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+## Developing
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### Q: What about Eject?
+```bash
+npm run dev
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+Svelte apps are built with _adapters_, which optimise your project for deployment to different environments, like [Begin](https://begin.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com) and so on. (You can also create your own adapter — instructions TODO.)
+
+By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, install it and update your `svelte.config.js` accordingly. The following official adapters are available:
+
+- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
+- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
+- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
+- ...more soon

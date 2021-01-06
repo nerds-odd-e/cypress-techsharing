@@ -1,33 +1,10 @@
-/** @type {import("snowpack").SnowpackUserConfig } */
+// Consult https://www.snowpack.dev to learn about these options
 module.exports = {
-  mount: {
-    /* ... */
-    public: "/",
-    src: "/_dist_",
-  },
-  plugins: [
-    /* ... */
-    "@snowpack/plugin-svelte",
-    { hydratable: true, css: false },
-  ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-    port: 5000,
-  },
-  buildOptions: {
-    /* ... */
-  },
-  proxy: {
-    /* ... */
-    "/api": "http://localhost:8080/api",
-  },
-  alias: {
-    /* ... */
-  },
+	extends: '@sveltejs/snowpack-config',
+	mount: {
+		'src/components': '/_components'
+	},
+	alias: {
+		$components: './src/components'
+	}
 };
