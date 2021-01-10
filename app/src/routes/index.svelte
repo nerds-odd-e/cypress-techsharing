@@ -30,11 +30,12 @@
 	}
 </style>
 
-<h1>Hello world!</h1>
-
-<Counter />
+<h1>End-to-End Testing with Cypress.io Workshop</h1>
+<img
+	src="/cypress_io_testing_hourglass.png"
+	alt="End-to-End Testing with Cypress.io Introductory Technical Workshop" />
 <p>
-	Visit the
-	<a href="https://svelte.dev">svelte.dev</a>
-	to learn how to build Svelte apps.
+	<a href="https://cypress.io">@cypress</a>
+	<a href="https://svelte.dev">@svelte.dev</a>
+	<a href="https://www.odd-e.com">@odd-e</a>
 </p>
