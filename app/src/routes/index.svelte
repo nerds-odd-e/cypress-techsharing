@@ -1,5 +1,5 @@
 <script>
-	import Counter from "$components/Counter.svelte";
+	// import Counter from "$components/Counter.svelte";
 </script>
 
 <style>
@@ -34,8 +34,3 @@
 <img
 	src="/cypress_io_testing_hourglass.png"
 	alt="End-to-End Testing with Cypress.io Introductory Technical Workshop" />
-<p>
-	<a href="https://cypress.io">@cypress</a>
-	<a href="https://svelte.dev">@svelte.dev</a>
-	<a href="https://www.odd-e.com">@odd-e</a>
-</p>
