@@ -1,6 +1,7 @@
 <script>
     import Nav from "$components/Nav.svelte";
     import FooterNav from "$components/FooterNav.svelte";
+    export const prerender = true;
 </script>
 
 <style>

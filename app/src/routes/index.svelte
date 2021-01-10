@@ -1,5 +1,5 @@
 <script>
-	// import Counter from "$components/Counter.svelte";
+	export const prerender = true;
 </script>
 
 <style>
