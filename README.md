@@ -1,7 +1,7 @@
 # Demo Project used to illustrate end-to-end testing with Cypress
 
 ### Start backend
-`gradle bootRun`
+`./gradlew bootRun`
 - backend REST API app will be started on [http://localhost:8080](http://localhost:8080)
 
 ### Test backend REST API with `httpie`
