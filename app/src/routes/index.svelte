@@ -1,36 +1,11 @@
-<script>
-	export const prerender = true;
-</script>
-
-<style>
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 4rem auto;
-		max-width: 14rem;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-
-		p {
-			max-width: none;
-		}
-	}
-</style>
-
-<h1>End-to-End Testing with Cypress.io Workshop</h1>
-<img
-	src="/cypress_io_testing_hourglass.png"
-	alt="End-to-End Testing with Cypress.io Introductory Technical Workshop" />
+<svelte:head>
+  <title>E2E Testing with Cypress</title>
+</svelte:head>
+<header>
+  <h1 class="text-2xl text-center my-8">End-to-End Testing with Cypress.io Workshop</h1>
+</header>
+<main>
+  <img class="w-128 h-128 md:w-128 md:h-auto mx-auto" src="/cypress_io_testing_hourglass.svg"
+  alt="End-to-End Testing with Cypress.io Introductory Technical Workshop" />
+  <h3><a class="p-6 text-lg text-gray-600 text-center rounded-md hover:font-medium hover:shadow-md hover:text-blue-400 flex flex-col items-center cursor-pointer" href="https://cypress.io">Visit cypress.io to read the documentation</a></h3>
+</main>
