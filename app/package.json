@@ -19,5 +19,8 @@
     "svelte": "^3.38.3",
     "tailwindcss": "^2.2.2"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "npm": "^7.18.1"
+  }
 }
