@@ -1,31 +1,30 @@
 <script context="module">
- export async function load({page}){
-   const id = page.params.id;
-   const url = `http://localhost:8080/api/group/${id}`;
-   const res = await fetch(url);
-   const group = await res.json();
-   return { props: { group } };
- }
+    import { fetchGroup } from '$lib/groupAPI.js';
+    export async function load({page}){
+      const id = page.params.id;
+      const group = await fetchGroup(id);
+      return { props: { group } };
+    }
 </script>
 
 <script>
-  import { editGroup } from '../../stores/groupsStore.js';
-  import { goto } from '$app/navigation';
-  export let group;
-  const pageTitle = group.id ? 'Edit Group' : 'Add Group';
+    import { editGroup } from '../../stores/groupsStore.js';
+    import { goto } from '$app/navigation';
+    export let group;
+    const pageTitle = group.id ? 'Edit Group' : 'Add Group';
 
-  const handleSubmit = (grp) => {
-    editGroup(grp);
-    goto('/groups');
-  };
-
+    const handleSubmit = (grp) => {
+        editGroup(grp);
+        goto('/groups');
+    };
 </script>
+
 <svelte:head>
   <title>{ pageTitle }</title>
 </svelte:head>
 <div class="flex flex-col items-center p-3">
     <h2 class="text-lg font-medium">{ pageTitle }</h2>
-    <form class="w-full sm:w-1/2 xl:w-5/12" on:submit|preventDefault={handleSubmit(group)} >
+    <form class="w-full sm:w-1/2" on:submit|preventDefault={handleSubmit(group)} >
       <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
         <div class="mb-4">
             <label for="name" class="block font-semibold text-gray-800 mb-2 text-left">Group Name</label>

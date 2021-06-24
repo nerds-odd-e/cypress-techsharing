@@ -23,6 +23,18 @@ export const removeGroup = (groupId) => {
 
 export const editGroup = (group) => {
 	updateGroup(group);
+	update(($groups) => {
+		if ($groups == null || $groups.error) {
+			return $groups;
+		}
+		return [...$groups].map((grp) => {
+			if (grp.id === group.id) {
+				return group;
+			} else {
+				return grp;
+			}
+		});
+	});
 };
 
 retrieveGroups();

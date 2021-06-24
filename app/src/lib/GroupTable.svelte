@@ -7,9 +7,27 @@
     removeGroup(groupId);
   };
 
-  $: {
-    retrieveGroups();
-  }
+  const formatLocation = (group) => {
+    let result = `${group.address || ''} ${group.city || ''} \
+                    ${group.stateOrProvince || ''} ${group.country || ''} \
+                    ${group.postalCode || ''}`.trim();
+    if (!result && result.length == 0) {
+      return '-';
+    } else {
+      return result;
+    }
+  };
+
+  const formatEvents = (events) => {
+    if (events.length == 0) return '-';
+    return events.map((event) => {
+      return `${new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit'
+      }).format(new Date(event.date))} : ${event.title}`;
+    });
+  };
 </script>
 
 <body class="flex items-center justify-center">
@@ -33,8 +51,8 @@
         {#each $groups as group}
           <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
             <td class="border-grey-light border hover:bg-gray-100 p-3">{ group.name }</td>
-            <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">{ group.location }</td>
-            <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">{ group.events }</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">{ formatLocation(group) }</td>
+            <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">{ formatEvents(group.events) }</td>
             <td class="border-grey-light border hover:bg-gray-100 p-3 hover:font-medium">
                 <button type="button" on:click={() => goto(`/group/${group.id}`)} class="bg-blue-500 text-gray-100 text-sm rounded hover:bg-blue-600 px-2 focus:outline-none cursor-pointer">Edit</button>
                 <button type="button" on:click={() => handleDelete(group.id)} class="bg-red-500 text-gray-100 text-sm rounded hover:bg-red-600 px-2 focus:outline-none cursor-pointer">Delete</button>
