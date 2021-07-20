@@ -20,12 +20,12 @@
 
 ## Frontend web UI stack
 
-- NodeJS 15.4 with Svelte3 bundled, built and run using snowpack.
+- NodeJS 16.5.0 with Sveltekit bundled, built and run using Vite.
 
-### Setup frontend ([snowpack](https://www.snowpack.dev) [svelte](https://svelte.dev))
+### Setup frontend ([vite](https://vitejs.dev) [sveltekit](https://kit.svelte.dev))
 
-`cd app && yarn`
+`cd app && npm install`
 
 ### Start frontend webapp
 
-`cd app && yarn start` [http://localhost:5000](http://localhost:5000)
+`cd app && npm run dev` [http://localhost:3000](http://localhost:3000)
