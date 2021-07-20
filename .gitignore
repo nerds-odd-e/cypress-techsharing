@@ -41,3 +41,8 @@ out/
 
 ### nodejs/cypress ###
 node_modules/
+cypress/screenshots
+cypress/videos
+
+### sveltekit
+**/.svelte-kit
