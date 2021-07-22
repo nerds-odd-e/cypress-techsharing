@@ -7,8 +7,8 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-import "@testing-library/cypress/add-commands";
-import "@percy/cypress";
+import '@testing-library/cypress/add-commands';
+import '@percy/cypress';
 //
 //
 // -- This is a parent command --
@@ -25,3 +25,7 @@ import "@percy/cypress";
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loadNewGroupFixture', function () {
+  cy.fixture('new_group').as('newGroup');
+});
