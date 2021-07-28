@@ -7,8 +7,13 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-import "@testing-library/cypress/add-commands";
-import "@percy/cypress";
+import '@testing-library/cypress/add-commands';
+
+const compareSnapshotCommand = require('cypress-image-diff-js/dist/command');
+compareSnapshotCommand();
+// *** Visual Testing with percy.io ***
+// import "@percy/cypress";
+// ************************************
 //
 //
 // -- This is a parent command --
