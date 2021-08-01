@@ -4,12 +4,6 @@
 // type definitions for custom cypress commands
 /// <reference types="../../support" />
 describe("Tech Community Home", function () {
-  it("Loads the Tech Community Home page on user request to root app URL", function () {
-    cy.visit("/");
-    // Take a snapshot for visual diffing
-    cy.percySnapshot();
-  });
-
   it("Displays Home page with actionable link to 'Manage Tech Communities'", function () {
     cy.visit("/");
 
