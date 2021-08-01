@@ -8,7 +8,7 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 import '@testing-library/cypress/add-commands';
-import '@percy/cypress';
+import 'cypress-iframe';
 //
 //
 // -- This is a parent command --
