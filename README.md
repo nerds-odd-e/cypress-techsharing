@@ -2,11 +2,11 @@
 
 ## Backend REST API stack
 
-- Java11 with Springboot built and run using Gradle. Datastore using in-memory database H2.
+- OpenJDK11/OpenJDK16 with Springboot built and run using Gradle. Datastore using in-memory database H2.
 
 ### Start backend (java spring-boot)
 
-`gradle bootRun`
+`./gradlew bootRun`
 
 - backend REST API app will be started on [http://localhost:8080](http://localhost:8080)
 
@@ -20,7 +20,7 @@
 
 ## Frontend web UI stack
 
-- NodeJS 16.5.0 with Sveltekit bundled, built and run using Vite.
+- NodeJS 16.6.0 with Sveltekit bundled, built and run using Vite.
 
 ### Setup frontend ([vite](https://vitejs.dev) [sveltekit](https://kit.svelte.dev))
 
