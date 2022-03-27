@@ -53,3 +53,12 @@ app/node_modules
 app/.svelte
 app/build
 app/functions
+
+#yarn berry
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
