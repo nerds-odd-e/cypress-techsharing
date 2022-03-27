@@ -1,7 +1,7 @@
 <script context="module">
     import { fetchGroup } from '$lib/groupAPI.js';
-    export async function load({page}){
-      const id = page.params.id;
+    export async function load({ params, fetch }){
+      const id = params.id;
       const group = await fetchGroup(id);
       return { props: { group } };
     }
