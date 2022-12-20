@@ -4,6 +4,7 @@ export default defineConfig({
   env: {
     TAGS: 'not @ignore',
   },
+  chromeWebSecurity: false,
   screenshotOnRunFailure: true,
   pageLoadTimeout: 100000,
   defaultCommandTimeout: 6000,

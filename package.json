@@ -9,8 +9,8 @@
     "cy:run": "cypress run",
     "start:backend": "./gradlew bootRun",
     "start:frontend": "npm run --prefix app dev",
-    "test:dev": "run-p -clnr start:backend start:frontend cy:open",
-    "test:ci": "run-p -clnr start:backend start:frontend cy:run"
+    "test:dev": "run-p -clnr start:backend cy:open start:frontend",
+    "test:ci": "run-p -clnr start:backend cy:run start:frontend"
   },
   "devDependencies": {
     "@testing-library/cypress": "^9.0",
