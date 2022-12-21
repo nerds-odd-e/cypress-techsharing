@@ -2,16 +2,17 @@ package com.odde.demo.techsharing.web;
 
 import com.odde.demo.techsharing.model.Group;
 import com.odde.demo.techsharing.model.GroupRepository;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Collection;
-import java.util.Optional;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Collection;
+import java.util.Optional;
 
 @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5000"})
 @RestController
