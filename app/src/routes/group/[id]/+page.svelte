@@ -1,16 +1,8 @@
-<script context="module">
-	import { fetchGroup } from '$lib/groupAPI.js';
-	export async function load({ params, fetch }) {
-		const id = params.id;
-		const group = await fetchGroup(id);
-		return { props: { group } };
-	}
-</script>
-
 <script>
-	import { editGroup } from '../../stores/groupsStore.js';
+	import { editGroup } from '../../../stores/groupsStore.js';
 	import { goto } from '$app/navigation';
-	export let group;
+	export let data;
+	let { group } = data;
 	const pageTitle = group.id ? 'Edit Group' : 'Add Group';
 
 	const handleSubmit = (grp) => {

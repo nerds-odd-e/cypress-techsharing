@@ -14,7 +14,7 @@ import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Optional;
 
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5000"})
+@CrossOrigin(origins = {"http://localhost:5173"})
 @RestController
 @RequestMapping("/api")
 class GroupController {

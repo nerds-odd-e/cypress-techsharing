@@ -1,6 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
-	import { retrieveGroups, removeGroup } from '../stores/groupsStore.js';
+	import { removeGroup } from '../stores/groupsStore.js';
 	import groups from '../stores/groupsStore.js';
 
 	const handleDelete = (groupId) => {
