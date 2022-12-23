@@ -10,8 +10,8 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "^1.0.0-next.405",
-		"@sveltejs/adapter-auto": "^1.0.0-next.64",
+		"@sveltejs/kit": "^1.0.0-next.588",
+		"@sveltejs/adapter-auto": "^1.0.0-next.91",
 		"autoprefixer": "^10.4",
 		"eslint": "^8.30",
 		"eslint-config-prettier": "^8.5",
@@ -19,8 +19,9 @@
 		"postcss": "^8.4",
 		"prettier": "^2.8",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.50",
-		"tailwindcss": "^3.2"
+		"svelte": "^3.54",
+		"tailwindcss": "^3.2",
+		"vite": "^4.0.0"
 	},
 	"type": "module",
 	"dependencies": {

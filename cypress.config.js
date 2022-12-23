@@ -5,7 +5,7 @@ export default defineConfig({
     TAGS: 'not @ignore',
   },
   chromeWebSecurity: false,
-  screenshotOnRunFailure: true,
+  video: false,
   pageLoadTimeout: 100000,
   defaultCommandTimeout: 6000,
   trashAssetsBeforeRuns: true,
